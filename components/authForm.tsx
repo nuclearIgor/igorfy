@@ -18,7 +18,7 @@ const AuthForm = ({ mode }) => {
 
       await auth(mode, {email, password})
       setIsLoading(false)
-      router.push('/')
+      await router.push('/')
   }
 
   return (
