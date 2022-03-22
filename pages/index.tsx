@@ -4,15 +4,15 @@ import prisma from "../lib/prisma";
 import {useMe} from "../lib/hooks";
 
 const Home = ({ artists }) => {
-    const {user} = useMe()
+    const {user, isLoading} = useMe()
 
   return (
     <GradientLayout
       color="blue"
       roundImage
       image="https://picsum.photos/200"
-      description="40 public playlists"
-      title="Igor Ribeiro"
+      description={`${user?.playlistCount} public playlists`}
+      title={`${user?.firstName} ${user?.lastName}`}
       subtitle="profile"
     >
       <Box color="white" paddingX="40px">
