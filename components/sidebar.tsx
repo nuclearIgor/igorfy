@@ -46,9 +46,8 @@ const Sidebar = () => {
             paddingX='5px' color='gray'
         >
             <Box paddingY='20px' height='100%'>
-                <Box width='120px' marginBottom='20px' paddingX='20px'>
-                    {/*<NextImage src='/logo.svg' height={60} width={120}/>*/}
-                    <NextImage src='/wip.svg' height={60} width={120} color='white'/>
+                <Box width='120px' marginBottom='20px' paddingX='20px' >
+                    <NextImage src='/logo.svg' layout="fixed" height={120} width={240}/>
                 </Box>
 
                 <Box marginBottom='20px'>

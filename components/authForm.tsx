@@ -24,7 +24,7 @@ const AuthForm = ({ mode }) => {
   return (
     <Box height="100vh" width="100vw" bg="black" color="white">
       <Flex justify="center" align="center" height="100px" borderBottom='1px solid white'>
-        <NextImage src='/logo.svg' height={60} width={120}/>
+          <NextImage src='/logo.svg' layout="fixed" height={108} width={240}/>
       </Flex>
 
       <Flex justify="center" align="center" height="calc(100vh - 100px)">
