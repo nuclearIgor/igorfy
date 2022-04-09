@@ -26,7 +26,7 @@ const PLaylist = ({ playlist }) => {
             <GradientLayout color={color} roundImage={false} title={playlist.name} subtitle="playlist"
             description={`${playlist.songs.length} songs`} image="https://picsum.photos/200"
             >
-                <SongsTable/>
+                <SongsTable songs={playlist.songs}/>
             </GradientLayout>
             <div>{playlist.id}</div>
             <div>{playlist.name}</div>
